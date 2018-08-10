@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+
+    <title>Document</title>
+    
+</head>
+<body>
+        <div id="zone"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script>
+                $(function() {
+                    
+                  $('#lecture').on('click', function(){
+                    $.getJSON('document.json',function(data){
+                        console.log(data);
+                     
+                  });
+                });});
+         </script>
+              <button  id="lecture" value="aaaaa">azeazeazeaze</button>
+
+
+</body>
+</html>
